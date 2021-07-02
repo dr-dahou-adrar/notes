@@ -265,7 +265,7 @@ Go to [this section](#directives-2).
 - Can be used multiple times → write a class → can be extended later!
 - Những type chung chung về cái gì đó thì nên làm thành 1 model
 
-```jsx
+``` jsx {% raw %}
 // recipe.model.ts
 export class Recipe { // <- TYPE!!!
 	public name: string;
@@ -297,6 +297,7 @@ export class RecipeListComponent implements OnInit {
 	src="{{ recipe.imagePath }}  // string interpolationing
 	[src]="recipe.imagePath"     // property binding
 >
+{% endraw %}
 ```
 
 ```jsx
