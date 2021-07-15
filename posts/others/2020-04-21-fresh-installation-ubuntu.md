@@ -31,9 +31,9 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
    2. Choose custom partition while installing > use at least 2 partitions for the installing (1 which is main for **Root** `/` and one which is ~500MB for **Boot** `/boot/etc`)
 4. Update & Upgrade
 
-   ```bash
-   sudo apt update & sudo apt upgrade
-   ```
+    ```bash
+    sudo apt update & sudo apt upgrade
+    ```
 
 5. Download and install [Google Chrome](https://www.google.com/chrome).
    1. Sign in to Google Account + sync all extensions + settings.
