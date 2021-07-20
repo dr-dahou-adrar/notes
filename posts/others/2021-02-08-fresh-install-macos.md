@@ -112,33 +112,36 @@ This is my personal list of to-do things for a new Macbook.
       4.  There are built-in LacViet dictionaries but they are not activated yet, don't forget them!
     - **Goldendict**: download installation [here](https://github.com/goldendict/goldendict/wiki/Early-Access-Builds-for-Mac-OS-X) + dictionaries [here](https://drive.google.com/drive/folders/1jna8_grA-wyhPrq8BiB7ypadvW3tTlIv).
 16. **External applications**
-    * [VSCode](https://code.visualstudio.com/download) + sign in to sync using Github account.
+
+    * (Optional) [balenaEtcher](https://www.balena.io/etcher/) -- Flash OS images to SD cards & USB drives, safely and easily. In case you wanna make a bootable USB to install other OS.
+    * [Bartender 4](https://www.macbartender.com/Bartender4/) (paid, 15.37$) -- hide some icons on menu bar.
+    * [CleanMyMac](https://macpaw.com/cleanmymac) (paid) -- uninstaller + optimize your mac.
+    * **Communication**: [Skype](https://www.skype.com/en/get-skype/), [Zoom](https://zoom.us/download), [Slack](https://slack.com/intl/en-fr/downloads/mac).
+    * [Docker](https://docs.docker.com/docker-for-mac/apple-m1/)
+    * ~~[Dropbox](https://www.dropbox.com/downloading). We can "quit" the app on dock, the icon on menu still there!~~ [Google Drive](https://www.google.com/drive/download/) -- sync personal data files.
+    * [EVKey](https://github.com/lamquangminh/EVKey) -- Vietnamese Input Method. **Note**: Don't use it with Bitwarden (a password manager).
+    * [GitKraken](https://www.gitkraken.com/) + sign in + clone some repos. Check [this note](/gitkraken/).
     * ~~[Google Chrome](https://www.google.com/chrome/) and sign in to sync~~. **I'm using [Brave](https://brave.com/)** (chromium-based engine also)
       1.  Disable Tab Hover Cards: navigate to `chrome://flags/`, search for "tab hover" and choose "Disable".
       2.  Add a site to use cookies (enable third-party cookies for downloading files on Google Drive): Go to `chrome://settings/cookies` and then "Add" `drive.google.com` (tick on third-party...) in "Sites that can always use cookies" section.
       3.  Custom keyboard shortcut: System Preferences > Keyboard > Shortcuts > Application Shortcuts > "+" > Choose Chrome > Type the name EXACTLY THE SAME as the name in menu (for example "Inspect elements") > Add a custom shortcut.
-    * ~~[Dropbox](https://www.dropbox.com/downloading). We can "quit" the app on dock, the icon on menu still there!~~ [Google Drive](https://www.google.com/drive/download/) -- sync personal data files.
     * [iTerm2](https://iterm2.com/) (check more in other section)
+    * [Itsycal](https://www.mowglii.com/itsycal/) -- a dropdown calendar with agenda. After installing, you have to choose manually the agenda profiles you wanna show.
+    * [Mojibar](https://github.com/muan/mojibar) - emoji indicator on menu bar. Install via `brew install mojibar`. Using [[⌃]] + [[⇧]] + [[⎵]] to open the window. A paid option is [Mumu](https://getmumu.com/) (20$).
+    * [Molotov](https://www.molotov.tv/download) -- watch French TV online.
+    * ~~[Paragon NTFS](https://www.paragon-software.com/home/ntfs-mac/) (paid, 20$)~~ [Mounty](https://mounty.app/) (no need to restart) -- Do everything with Windows drives on your Mac.
+      - Another option: you can buy an OTG (On-The-go) adapter and connect the external drive using it without any problem. I used [Urgreen's](https://www.amazon.fr/gp/product/B072V9CNTK).
+    * [Paintbrush](https://paintbrush.sourceforge.io/) -- a "Paint like" for macOS. A simple image editor for macOS.
+    * [qView](https://interversehq.com/qview/download/) -- cross platform photo viewer (continuously view photos in the same folder + simple viewer + no open old files,...)
+    * [Raindrop](https://raindrop.io/download) -- bookmark manager.
+    * [SelfControl](https://selfcontrolapp.com/) -- A free Mac application to help you avoid distracting websites. **Tip**: It seems that impossible to disable until the time is over, however, just change the system date and you are able to reset the timer.
+    * [TeamViewer](https://www.teamviewer.com/en/download/mac-os/) -- remote control.
+    * ~~[uBar](https://brawersoftware.com/products/ubar) (paid) -- disable default dock and make a windows-like taskbar. **Be careful**, it takes too much RAM!~~
+    * ~~[VLC Player](https://www.videolan.org/vlc/download-macosx.html)~~ -- video player. [IINA player](https://iina.io/) -- The modern media player for MacOS.
+    * [VSCode](https://code.visualstudio.com/download) + sign in to sync using Github account.
+    * [XDM Download Manager](https://sourceforge.net/projects/xdman/files/XDMSetup.dmg/download).
     * [Youtube Music App](https://ytmusic.app/) for Mac (unofficial)
     * ~~[XtraFinder](https://www.trankynam.com/xtrafinder/) (additional settings for Finder)~~
-    * Communication: [Skype](https://www.skype.com/en/get-skype/), [Zoom](https://zoom.us/download), [Slack](https://slack.com/intl/en-fr/downloads/mac).
-    * ~~[VLC Player](https://www.videolan.org/vlc/download-macosx.html)~~ -- video player. [IINA player](https://iina.io/) -- The modern media player for MacOS.
-    * [GitKraken](https://www.gitkraken.com/) + sign in + clone some repos. Check [this note](/gitkraken/).
-    * [CleanMyMac](https://macpaw.com/cleanmymac) (paid) -- uninstaller + optimize your mac.
-    * ~~[Paragon NTFS](https://www.paragon-software.com/home/ntfs-mac/) (paid, 20$)~~ [Mounty](https://mounty.app/) (no need to restart) -- Do everything with Windows drives on your Mac.
-      1.  Another option: you can buy an OTG (On-The-go) adapter and connect the external drive using it without any problem. I used [Urgreen's](https://www.amazon.fr/gp/product/B072V9CNTK).
-    * [Bartender 4](https://www.macbartender.com/Bartender4/) (paid, 15.37$) -- hide some icons on menu bar.
-    * [Itsycal](https://www.mowglii.com/itsycal/) -- a dropdown calendar with agenda. After installing, you have to choose manually the agenda profiles you wanna show.
-    * ~~[uBar](https://brawersoftware.com/products/ubar) (paid) -- disable default dock and make a windows-like taskbar. **Be careful**, it takes too much RAM!~~
-    * [XDM Download Manager](https://sourceforge.net/projects/xdman/files/XDMSetup.dmg/download).
-    * [Docker](https://docs.docker.com/docker-for-mac/apple-m1/)
-    * [SelfControl](https://selfcontrolapp.com/) -- A free Mac application to help you avoid distracting websites. **Tip**: It seems that impossible to disable until the time is over, however, just change the system date and you are able to reset the timer.
-    * [Mojibar](https://github.com/muan/mojibar) - emoji indicator on menu bar. Install via `brew install mojibar`. Using [[⌃]] + [[⇧]] + [[⎵]] to open the window. A paid option is [Mumu](https://getmumu.com/) (20$).
-    * [EVKey](https://github.com/lamquangminh/EVKey) -- Vietnamese Input Method. **Note**: Don't use it with Bitwarden (a password manager).
-    * [Raindrop](https://raindrop.io/download) -- bookmark manager.
-    * (Optional) [balenaEtcher](https://www.balena.io/etcher/) -- Flash OS images to SD cards & USB drives, safely and easily. In case you wanna make a bootable USB to install other OS.
-    * [Molotov](https://www.molotov.tv/download) -- watch French TV online.
-    * [TeamViewer](https://www.teamviewer.com/en/download/mac-os/) -- remote control.
 17. **Appstore**
     * **Amphetamine** -- Keep-awake your mac, an alternative to caffein on linux.
     * **Bitwarden** -- need to install desktop application to enable fingerprint unlock for browser extension. Restart both application and follow the instruction on extension to enable this feature.
