@@ -66,6 +66,8 @@ export PATH=/usr/local/cuda/bin:$PATH
 sudo apt install -y nvidia-cuda-toolkit
 ```
 
+If below command doesn't work, try to install `nvidia-docker2` (read [this section](#install-nvidia-docker2)).
+
 ``` bash
 # install and check nvidia-docker
 dpkg -l | grep nvidia-docker
@@ -113,7 +115,9 @@ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 {% endhsbox %}
 
 
-👉 [Officicial guide to install](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker).
+👉 (Should follow this for the up-to-date) [Officicial guide to install](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker).
+
+{% hsbox "Command lines (for quickly preview)" %}
 
 ``` bash
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
@@ -126,6 +130,8 @@ sudo apt-get install -y nvidia-docker2
 # restart docker
 sudo systemctl restart docker
 ```
+
+{% endhsbox %}
 
 ``` bash
 # check version

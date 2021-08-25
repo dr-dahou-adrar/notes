@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Wordpress Docker"
-tags: [Web Dev, Wordpress, Docker]
+tags: [Web Dev, Wordpress, Docker, CMS]
 toc: true
 icon: "wordpress.svg"
 keywords: "docker wordpress install a-z a to z automatically docker image docker container wamp lamp mamp all in one wordpress migration cli wp-cli backup migration locally docker"

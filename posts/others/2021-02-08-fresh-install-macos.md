@@ -15,37 +15,39 @@ This is my personal list of to-do things for a new Macbook.
 
 1. **Check info**:
 
-    ```bash
-    # Current version of MacOSX
-    sw_vers -productVersion
+   ```bash
+   # Current version of MacOSX
+   sw_vers -productVersion
 
-    # Check if XCode Command Line Tools is installed
-    xcode-select --install
-    # Should return "/usr/bin/xcrun"
-    # If there is any problem, try to install XCode from App Store!
+   # Check if XCode Command Line Tools is installed
+   xcode-select --install
+   # Should return "/usr/bin/xcrun"
+   # If there is any problem, try to install XCode from App Store!
 
-    # check if running on ARM or Intel
-    arch
-    # arm64 -> ARM
-    # i386 -> Intel (running with Rosetta)
-    ```
+   # check if running on ARM or Intel
+   arch
+   # arm64 -> ARM
+   # i386 -> Intel (running with Rosetta)
+   ```
 
 2. **Keyboard & Trackpad settings**: Go to **Keyboard Settings** and then,
+
    1. Should choose "U.S." instead of "U.S. International" because with the latter, we have underline score below special symbols like `"`
    2. For Vietnamese input method, DON'T choose built-in VNese input options. Use ~~[GoTiengViet](https://www.trankynam.com/gotv/)~~ [EVKey](https://evkeyvn.com/) instead (Turn off _Gatekeeper_ before installing by `sudo spctl --master-disable`. Then check by `spctl --status` => should return `assessments disabled`)! (Because there will be unconfortable underline when we type).
       1. **Note 1**: If you are going to use Bitwarden (a password manager, recommended), it will prevent sometimes the input method to work normally (including GoTiengViet and EVKey). In this case, you have to turn off Bitwarden (or restart it).
       2. **Note 2**: EVKey works better than GoTiengViet (and it's still maintained) in some cases, for example, when you wanna type "thử nghiệm" on the browser address bar, GoTiengViet gives "thuử nghiệm" instead.
 
 3. **More keyboard settings**:
-   1.  Touch Bar shows: **F1, F2, etc Keys**.
-   2.  Press ... to: **Do Nothing**.
-   3.  Press and hold ... to: **Show Control Srip**.
-   4.  Tick on "Use F1, F2..."
-   5.  Click on **Customize Control Strip** and change. Below are my customization.
 
-        ``` bash
-        Brightness - Keyboard Brightness -- Media -- Volume -- Screen Lock -- Night Shift -- Screen Capture -- Dictation -- Siri
-        ```
+   1. Touch Bar shows: **F1, F2, etc Keys**.
+   2. Press ... to: **Do Nothing**.
+   3. Press and hold ... to: **Show Control Srip**.
+   4. Tick on "Use F1, F2..."
+   5. Click on **Customize Control Strip** and change. Below are my customization.
+
+      ```bash
+      Brightness - Keyboard Brightness -- Media -- Volume -- Screen Lock -- Night Shift -- Screen Capture -- Dictation -- Siri
+      ```
 
 4. Map top-left keyboard to backslash/tilde symbols. Install [Karabiner-Elements](https://karabiner-elements.pqrs.org/) and setting up "non_us_backslash" to "grave_accent_and_tilde (`)". If you don't know the names of some keys, you can use installed Karabiner Viewer.
 5. Three fingers to drag (choose texts): **System Preferences** > **Accessibility** > **Pointer Control** > **Trackpad Options...** > Enable dragging (three fingers drag).
@@ -77,21 +79,21 @@ This is my personal list of to-do things for a new Macbook.
     3. For **Canon MG2900** printer/scanner + apps: you may need to download and install drivers from [this site](https://brothersupportdownloads.blogspot.com/2020/06/canon-pixma-mg2900-scanner-driver.html). A backup files are [here](https://mega.nz/file/U0RwBR6T#qa50uOyhlAEiRtrMm_zBkXPtPufJD2Wa1gtbtkw5W_w). You may find other useful drivers for other types of printers on this site also.
     4. **Scanner app**: use **Image Capture** (built-in app on Mac) or install **Canon IJ Scan Utility2**.
 12. **Finder**:
-    1.  Add necessary folder shortcuts to sidebar.
-    2.  Add recycle Bin to sidebar: [[⇧]] + [[⌘]] + [[.]] to show hidden folders > drag **Bin** folder to sidebar > [[⇧]] + [[⌘]] + [[.]] to hide hidden folders again.
-    3.  Customize some options in Preferences.
-    4.  Show status bar: View > Show status bar.
+    1. Add necessary folder shortcuts to sidebar.
+    2. Add recycle Bin to sidebar: [[⇧]] + [[⌘]] + [[.]] to show hidden folders > drag **Bin** folder to sidebar > [[⇧]] + [[⌘]] + [[.]] to hide hidden folders again.
+    3. Customize some options in Preferences.
+    4. Show status bar: View > Show status bar.
 13. Copy files between Linux and MacOS. **Require**: the same wifi network!
     1. **On MacOS**: System Preferences > Sharing > Tick on "File Sharing" > choose "Shared Folders" > on "Everyon", change to "Write & Read".
     2. **On Linux**: Nautilus, click on "Other Locations" > "Networks" > choose the Macbook (and type macos profile password) > choose the shared folders in previous step > Exchange files/folders you want.
-13. Disable Resume in Preview and QuickTime Player
+14. Disable Resume in Preview and QuickTime Player
 
-    ``` bash
+    ```bash
     defaults write com.apple.Preview NSQuitAlwaysKeepsWindows -bool false
     defaults write com.apple.QuickTimePlayerX NSQuitAlwaysKeepsWindows -bool false
     ```
 
-14. **Screen recorder**:
+15. **Screen recorder**:
     - **My choice**: using [Screenflick](https://www.araelium.com/screenflick-mac-screen-recorder) (paid, 35$).
     - Using **QuickTime** / built-in function. Open QuickTime or [[⌘]] + [[⇧]] + [[5]] to open screenshot/recording options. **Weakness**: big size + impossible (or possible??) to record system sounds.
     - Using [OBS](https://obsproject.com/) (Free, suitable for streaming) (for recording app) + [BlackHole](https://github.com/ExistentialAudio/BlackHole) (for bypassing system audio recorder, I chose **2ch** to download).
@@ -104,70 +106,72 @@ This is my personal list of to-do things for a new Macbook.
       6. Some settings for OBS:
          1. Turn off preview for screen (for comfortable)
          2. **Video** > Common FPS Values = 20
-15. **Dictionary**
+16. **Dictionary**
     - [Install Viettien](https://mega.nz/file/x0RgTbhK#1rz1mpsbXXxLmLs1blVk9zLEmI0d5FXk7Bora4Rm9Y0) (I use version 5.0b for Mac Big Sur chip M1). Alternative dictionaries can be downloaded from this link (I backed it up for personally using).
-      1.  Don't forget to open **Security & Privacy** and click on **Open anyway** many times!
-      2.  Another option is to install Tinhte's dictionary from this link, copy extracted folder (`Tinhe_anh-viet.dictionary`) to `/Users/thi/Library/Dictionaries/`.
-      3.  After installing successfully, open Dictionary app > Preferences... > Tick on the names which are corresponding to the installed/copied dictionaries.
-      4.  There are built-in LacViet dictionaries but they are not activated yet, don't forget them!
+      1. Don't forget to open **Security & Privacy** and click on **Open anyway** many times!
+      2. Another option is to install Tinhte's dictionary from this link, copy extracted folder (`Tinhe_anh-viet.dictionary`) to `/Users/thi/Library/Dictionaries/`.
+      3. After installing successfully, open Dictionary app > Preferences... > Tick on the names which are corresponding to the installed/copied dictionaries.
+      4. There are built-in LacViet dictionaries but they are not activated yet, don't forget them!
     - **Goldendict**: download installation [here](https://github.com/goldendict/goldendict/wiki/Early-Access-Builds-for-Mac-OS-X) + dictionaries [here](https://drive.google.com/drive/folders/1jna8_grA-wyhPrq8BiB7ypadvW3tTlIv).
-16. **External applications**
-
-    * (Optional) [balenaEtcher](https://www.balena.io/etcher/) -- Flash OS images to SD cards & USB drives, safely and easily. In case you wanna make a bootable USB to install other OS.
-    * [Bartender 4](https://www.macbartender.com/Bartender4/) (paid, 15.37$) -- hide some icons on menu bar.
-    * [CleanMyMac](https://macpaw.com/cleanmymac) (paid) -- uninstaller + optimize your mac.
-    * **Communication**: [Skype](https://www.skype.com/en/get-skype/), [Zoom](https://zoom.us/download), [Slack](https://slack.com/intl/en-fr/downloads/mac).
-    * [Docker](https://docs.docker.com/docker-for-mac/apple-m1/)
-    * ~~[Dropbox](https://www.dropbox.com/downloading). We can "quit" the app on dock, the icon on menu still there!~~ [Google Drive](https://www.google.com/drive/download/) -- sync personal data files.
-    * [EVKey](https://github.com/lamquangminh/EVKey) -- Vietnamese Input Method. **Note**: Don't use it with Bitwarden (a password manager).
-    * [GitKraken](https://www.gitkraken.com/) + sign in + clone some repos. Check [this note](/gitkraken/).
-    * ~~[Google Chrome](https://www.google.com/chrome/) and sign in to sync~~. **I'm using [Brave](https://brave.com/)** (chromium-based engine also)
-      1.  Disable Tab Hover Cards: navigate to `chrome://flags/`, search for "tab hover" and choose "Disable".
-      2.  Add a site to use cookies (enable third-party cookies for downloading files on Google Drive): Go to `chrome://settings/cookies` and then "Add" `drive.google.com` (tick on third-party...) in "Sites that can always use cookies" section.
-      3.  Custom keyboard shortcut: System Preferences > Keyboard > Shortcuts > Application Shortcuts > "+" > Choose Chrome > Type the name EXACTLY THE SAME as the name in menu (for example "Inspect elements") > Add a custom shortcut.
-    * [iTerm2](https://iterm2.com/) (check more in other section)
-    * [Itsycal](https://www.mowglii.com/itsycal/) -- a dropdown calendar with agenda. After installing, you have to choose manually the agenda profiles you wanna show.
-    * [Mojibar](https://github.com/muan/mojibar) - emoji indicator on menu bar. Install via `brew install mojibar`. Using [[⌃]] + [[⇧]] + [[⎵]] to open the window. A paid option is [Mumu](https://getmumu.com/) (20$).
-    * [Molotov](https://www.molotov.tv/download) -- watch French TV online.
-    * ~~[Paragon NTFS](https://www.paragon-software.com/home/ntfs-mac/) (paid, 20$)~~ [Mounty](https://mounty.app/) (no need to restart) -- Do everything with Windows drives on your Mac.
+17. **External applications**
+    - (Optional) [balenaEtcher](https://www.balena.io/etcher/) -- Flash OS images to SD cards & USB drives, safely and easily. In case you wanna make a bootable USB to install other OS.
+    - [Bartender 4](https://www.macbartender.com/Bartender4/) (paid, 15.37$) -- hide some icons on menu bar.
+    - [CleanMyMac](https://macpaw.com/cleanmymac) (paid) -- uninstaller + optimize your mac.
+    - **Communication**: [Skype](https://www.skype.com/en/get-skype/), [Zoom](https://zoom.us/download), [Slack](https://slack.com/intl/en-fr/downloads/mac).
+    - [Docker](https://docs.docker.com/docker-for-mac/apple-m1/)
+    - ~~[Dropbox](https://www.dropbox.com/downloading). We can "quit" the app on dock, the icon on menu still there!~~ [Google Drive](https://www.google.com/drive/download/) -- sync personal data files.
+    - [EVKey](https://github.com/lamquangminh/EVKey) -- Vietnamese Input Method. **Note**: Don't use it with Bitwarden (a password manager).
+    - [GitKraken](https://www.gitkraken.com/) + sign in + clone some repos. Check [this note](/gitkraken/).
+    - ~~[Google Chrome](https://www.google.com/chrome/) and sign in to sync~~. **I'm using [Brave](https://brave.com/)** (chromium-based engine also)
+      1. Disable Tab Hover Cards: navigate to `chrome://flags/`, search for "tab hover" and choose "Disable".
+      2. Add a site to use cookies (enable third-party cookies for downloading files on Google Drive): Go to `chrome://settings/cookies` and then "Add" `drive.google.com` (tick on third-party...) in "Sites that can always use cookies" section.
+      3. Custom keyboard shortcut: System Preferences > Keyboard > Shortcuts > Application Shortcuts > "+" > Choose Chrome > Type the name EXACTLY THE SAME as the name in menu (for example "Inspect elements") > Add a custom shortcut.
+    - [iTerm2](https://iterm2.com/) (check more in other section)
+    - [Itsycal](https://www.mowglii.com/itsycal/) -- a dropdown calendar with agenda. After installing, you have to choose manually the agenda profiles you wanna show.
+    - [Mojibar](https://github.com/muan/mojibar) - emoji indicator on menu bar. Install via `brew install mojibar`. Using [[⌃]] + [[⇧]] + [[⎵]] to open the window. A paid option is [Mumu](https://getmumu.com/) (20$).
+    - [Molotov](https://www.molotov.tv/download) -- watch French TV online.
+    - [MusicBrainz Picard](https://picard.musicbrainz.org/) - Free music tag editor.
+    - ~~[Paragon NTFS](https://www.paragon-software.com/home/ntfs-mac/) (paid, 20$)~~ [Mounty](https://mounty.app/) (no need to restart) -- Do everything with Windows drives on your Mac.
       - Another option: you can buy an OTG (On-The-go) adapter and connect the external drive using it without any problem. I used [Urgreen's](https://www.amazon.fr/gp/product/B072V9CNTK).
-    * [Paintbrush](https://paintbrush.sourceforge.io/) -- a "Paint like" for macOS. A simple image editor for macOS.
-    * [qView](https://interversehq.com/qview/download/) -- cross platform photo viewer (continuously view photos in the same folder + simple viewer + no open old files,...)
-    * [Raindrop](https://raindrop.io/download) -- bookmark manager.
-    * [SelfControl](https://selfcontrolapp.com/) -- A free Mac application to help you avoid distracting websites. **Tip**: It seems that impossible to disable until the time is over, however, just change the system date and you are able to reset the timer.
-    * [TeamViewer](https://www.teamviewer.com/en/download/mac-os/) -- remote control.
-    * ~~[uBar](https://brawersoftware.com/products/ubar) (paid) -- disable default dock and make a windows-like taskbar. **Be careful**, it takes too much RAM!~~
-    * ~~[VLC Player](https://www.videolan.org/vlc/download-macosx.html)~~ -- video player. [IINA player](https://iina.io/) -- The modern media player for MacOS.
-    * [VSCode](https://code.visualstudio.com/download) + sign in to sync using Github account.
-    * [XDM Download Manager](https://sourceforge.net/projects/xdman/files/XDMSetup.dmg/download).
-    * [Youtube Music App](https://ytmusic.app/) for Mac (unofficial)
-    * ~~[XtraFinder](https://www.trankynam.com/xtrafinder/) (additional settings for Finder)~~
-17. **Appstore**
-    * **Amphetamine** -- Keep-awake your mac, an alternative to caffein on linux.
-    * **Bitwarden** -- need to install desktop application to enable fingerprint unlock for browser extension. Restart both application and follow the instruction on extension to enable this feature.
-    * **Communication**: Whatsapp Desktop + Messenger App.
-    * **DictBox** -- dictionary.
-    * **Magnet** -- arrange window workspace (stick to edge like on Windows).
-    * **Skitch** -- annotation for photos on Mac.
-    * **TaskTab** -- List of tasks right on menu bar.
-    * **TickTick** -- task manager.
-    * **The Unarchiver**
-    * **Word** and **Powerpoint** (in Office 365 suit, paid). You can buy a lifetime license on ebay (not your own email but you can integrate yours later).
-    * **Yomu** -- ebook reader.
+    - [Paintbrush](https://paintbrush.sourceforge.io/) -- a "Paint like" for macOS. A simple image editor for macOS.
+    - [Qbserve](https://qotoqot.com/qbserve/) (paid, 15 days trial) -- Activities tracker for MacOS. Record all of your activities on your Mac (and show in real time on menu bar) your productivity. I chose it because I can buy it forever without subscription and satisfies with its simple UI.
+    - [qView](https://interversehq.com/qview/download/) -- cross platform photo viewer (continuously view photos in the same folder + simple viewer + no open old files,...)
+    - [Raindrop](https://raindrop.io/download) -- bookmark manager.
+    - [SelfControl](https://selfcontrolapp.com/) -- A free Mac application to help you avoid distracting websites. **Tip**: It seems that impossible to disable until the time is over, however, just change the system date and you are able to reset the timer.
+    - [TeamViewer](https://www.teamviewer.com/en/download/mac-os/) -- remote control.
+    - [Transmission](https://transmissionbt.com/) -- torrent client.
+    - ~~[uBar](https://brawersoftware.com/products/ubar) (paid) -- disable default dock and make a windows-like taskbar. **Be careful**, it takes too much RAM!~~
+    - ~~[VLC Player](https://www.videolan.org/vlc/download-macosx.html)~~ -- video player. [IINA player](https://iina.io/) -- The modern media player for MacOS.
+    - [VSCode](https://code.visualstudio.com/download) + sign in to sync using Github account.
+    - [XDM Download Manager](https://sourceforge.net/projects/xdman/files/XDMSetup.dmg/download).
+    - [Youtube Music App](https://ytmusic.app/) for Mac (unofficial)
+    - ~~[XtraFinder](https://www.trankynam.com/xtrafinder/) (additional settings for Finder)~~
+18. **Appstore**
 
-18. **Terminal**
+    - **Amphetamine** -- Keep-awake your mac, an alternative to caffein on linux.
+    - **Bitwarden** -- need to install desktop application to enable fingerprint unlock for browser extension. Restart both application and follow the instruction on extension to enable this feature.
+    - **Communication**: Whatsapp Desktop + Messenger App.
+    - **DictBox** -- dictionary.
+    - **Magnet** -- arrange window workspace (stick to edge like on Windows).
+    - **Skitch** -- annotation for photos on Mac.
+    - **TaskTab** -- List of tasks right on menu bar.
+    - **TickTick** -- task manager.
+    - **The Unarchiver**
+    - **Word** and **Powerpoint** (in Office 365 suit, paid). You can buy a lifetime license on ebay (not your own email but you can integrate yours later).
+    - **Yomu** -- ebook reader.
+
+19. **Terminal**
+
     - (For chip M1 only)
 
-        ```bash
-        # check if running on ARM or Intel
-        arch
-        # arm64 -> ARM
-        # i386 -> Intel (running with Rosetta)
-        ```
+      ```bash
+      # check if running on ARM or Intel
+      arch
+      # arm64 -> ARM
+      # i386 -> Intel (running with Rosetta)
+      ```
 
-        Copy `/Applications/Utilities/Terminal.app` to Download folder, rename it to **Terminal-Rosetta.app**. Move the new to /Applications/Utilities/ again. Right click on Terminal-Rosetta.app > Get Info > Click on "Open using Rosetta".
-            - If you wanna run commands in Intel environment, use **Terminal-Rosseta**.
-            - If you wanna run commands in ARM environment, use **Terminal.app**.
+      Copy `/Applications/Utilities/Terminal.app` to Download folder, rename it to **Terminal-Rosetta.app**. Move the new to /Applications/Utilities/ again. Right click on Terminal-Rosetta.app > Get Info > Click on "Open using Rosetta". - If you wanna run commands in Intel environment, use **Terminal-Rosseta**. - If you wanna run commands in ARM environment, use **Terminal.app**.
 
     - Dropdown terminal with **iTerm2**.
       1. Create a new profile and make it default. Download my customized profile [here](https://github.com/dinhanhthi/scripts/blob/master/settings/macos/DropDown.json).
@@ -179,34 +183,35 @@ This is my personal list of to-do things for a new Macbook.
       4. Custom name of pane: Right click on the pane > _Edit Session..._ > Tab _General_ > Change the name in _Session Name_ (eg. "WORKING") (also click on the "lock" icon on the right) > _Session Title_ ONLY tick on "Session Name".
     - **Zsh terminal**: 👉 Note: [Terminal](/terminal/).
 
-        ::: hsbox Code
+      ::: hsbox Code
 
-        ```bash
-        # By default, iTerm2 comes with pre-installed zsh
-        # You can check current shell
-        echo $SHELL # should returns /bin/zsh
-        # Check zsh version
-        zsh --version
+      ```bash
+      # By default, iTerm2 comes with pre-installed zsh
+      # You can check current shell
+      echo $SHELL # should returns /bin/zsh
+      # Check zsh version
+      zsh --version
 
-        # install oh-my-zsh
-        sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+      # install oh-my-zsh
+      sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-        # install spaceship theme
-        git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-        ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-        # Make spaceship as default
-        # Set ZSH_THEME="spaceship" in your .zshrc.
-        # Follow this (optional): https://gist.github.com/kevin-smets/8568070
-        # Download (then open and install) font Source Code Pro:
-        # https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf
-        # Open iTerm2 Preferences > Profile > Text > change font!
+      # install spaceship theme
+      git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+      ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+      # Make spaceship as default
+      # Set ZSH_THEME="spaceship" in your .zshrc.
+      # Follow this (optional): https://gist.github.com/kevin-smets/8568070
+      # Download (then open and install) font Source Code Pro:
+      # https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf
+      # Open iTerm2 Preferences > Profile > Text > change font!
 
-        # If you wanna see the changes
-        source ~/.zshrc
-        ```
-        :::
+      # If you wanna see the changes
+      source ~/.zshrc
+      ```
 
-19. Macbook keyboard symbols
+      :::
+
+20. Macbook keyboard symbols
 
     ::: hsbox ALl symbols
 
@@ -243,27 +248,29 @@ This is my personal list of to-do things for a new Macbook.
 
     :::
 
-20. **Errors**
+21. **Errors**
+
     1. After updating
 
-        ```bash
-        xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
-        ```
+       ```bash
+       xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+       ```
 
-        Need to update _Xcode Command-line Tools_:
+       Need to update _Xcode Command-line Tools_:
 
-        ```bash
-        # option 1
-        xcode-select --install
-        # output:
-        xcode-select: note: install requested for command line developer tools
-        ```
+       ```bash
+       # option 1
+       xcode-select --install
+       # output:
+       xcode-select: note: install requested for command line developer tools
+       ```
 
-        ```bash
-        # option 2 (if option 1 doesn't work)
-        # Login + download from webpage
-        https://developer.apple.com/download/more/
-        ```
+       ```bash
+       # option 2 (if option 1 doesn't work)
+       # Login + download from webpage
+       https://developer.apple.com/download/more/
+       ```
+
     2. **Sidecar**: Using Sidecar feature to turn your ipad to an external screen. It ==works normally with cable== (you have to "trust" from both sides each other). In the case you **cannot use Sidecar via wireless**,
        1. Turn on Hardoff on both Mac (in General) and iPad (in General).
        2. Turn on Bluetooth and Wifi (connect to the same network).
@@ -274,6 +281,13 @@ This is my personal list of to-do things for a new Macbook.
           - _Not working_: mac - hub - ipad.
           - _Working_: mac - hub - usb doc - ipad
 
-21. **External screens**: I use 2 external screens. However, chip Apple M1 doesn't support more than 1 external one. That's why we need an adapter (having DisplayLink technology) + to install DisplayLink driver for Mac.
+    3. In case of error in installing Application with `App is Damaged Can’t Be Opened`
+
+        ```bash
+        xattr -cr /Applications/App_Name.app
+        ```
+
+22. **External screens**: I use 2 external screens. However, chip Apple M1 doesn't support more than 1 external one. That's why we need an adapter (having DisplayLink technology) + to install DisplayLink driver for Mac.
+
     - I use [this adapter](https://www.wavlink.com/en_us/product/WL-UG39DK1_White.html) (Wavlink's USB 3.0 Laptop Docking Station -- WL-UG39DK1) because it's the cheapest one I can find in France.
     - [DisplayLink driver](https://www.displaylink.com/downloads/macos). Not that, with current version (1.4), [it doesn't support rotating screen](https://support.displaylink.com/knowledgebase/articles/1963276).
